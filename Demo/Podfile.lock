@@ -1,6 +1,6 @@
 PODS:
   - MBProgressHUD (0.6)
-  - MWPhotoBrowser (1.0.1):
+  - MWPhotoBrowser (1.1):
     - MBProgressHUD
     - SDWebImage
   - SDWebImage (3.2):
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MBProgressHUD: 9b55a90566fb5d07df0602f6fd9fa04510ad5d52
-  MWPhotoBrowser: 5f1b9b82e6510b81b62920e2fead5fbeac83ce78
+  MWPhotoBrowser: 42689ed57901769601063556f67ebac921064add
   SDWebImage: f742ac91b65bd34b6d452325115e2ded3a73380e
 
 COCOAPODS: 0.20.2
