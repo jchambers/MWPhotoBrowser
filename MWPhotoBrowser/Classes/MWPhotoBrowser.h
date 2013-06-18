@@ -29,6 +29,10 @@
 - (void)photoBrowserDidFinish:(MWPhotoBrowser *)photoBrowser;
 @end
 
+@protocol MWPhotoBrowserActionButtonDelegate
+- (UIBarButtonItem *)actionButton;
+@end
+
 // MWPhotoBrowser
 @interface MWPhotoBrowser : UIViewController <UIScrollViewDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate> 
 
