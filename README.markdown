@@ -1,3 +1,14 @@
+## Preamble - fork notes
+
+This is a fork of the [MWPhotoBrowser](https://github.com/mwaterfall/MWPhotoBrowser) project. I've applied the following pull requests and changes:
+
+- Merged ["Status bar shouldn't be shown after when was hidden before. Changed de dismissing behavior."](https://github.com/mwaterfall/MWPhotoBrowser/pull/94).
+- Merged ["Project upgraded to the latest bells & whistles"](https://github.com/mwaterfall/MWPhotoBrowser/pull/105).
+- Switched to [CocoaPods](http://cocoapods.org/) for dependency management (podspec based heavily on the one from ["Use latest SDWebImage. Cleanup SDWebImage related stuff."](https://github.com/mwaterfall/MWPhotoBrowser/pull/98)).
+- Updated to [SDWebImage](https://github.com/rs/SDWebImage) 3.2 (based heavily on ["Use latest SDWebImage. Cleanup SDWebImage related stuff."](https://github.com/mwaterfall/MWPhotoBrowser/pull/98)).
+
+The original README follows.
+
 # MWPhotoBrowser — A simple iOS photo browser
 
 MWPhotoBrowser is an implementation of a photo browser similar to the native Photos app in iOS. It can display one or more images by providing either `UIImage` objects, file paths to images on the device, or URLs to images online. The photo browser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. Works on iOS 3.2+. All strings are localisable so they can be used in apps that support multiple languages.
