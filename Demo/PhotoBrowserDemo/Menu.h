@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MWPhotoBrowser.h"
+#import "MWBasicActionButtonDelegate.h"
 
 @interface Menu : UITableViewController <MWPhotoBrowserDelegate> {
     NSArray *_photos;

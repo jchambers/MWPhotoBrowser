@@ -24,6 +24,8 @@
 		4C6F96ED14AF70BD00F8389A /* MWZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F96E114AF70BD00F8389A /* MWZoomingScrollView.m */; };
 		4C6F97C714AF74E200F8389A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6F97C614AF74E200F8389A /* MessageUI.framework */; };
 		4CB08BA314B1F38700730E9F /* MWPhotoProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB08BA214B1F38700730E9F /* MWPhotoProtocol.h */; };
+		FC0F1C1D1770EA3900B1C38C /* MWBasicActionButtonDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FC0F1C1B1770EA3900B1C38C /* MWBasicActionButtonDelegate.h */; };
+		FC0F1C1E1770EA3900B1C38C /* MWBasicActionButtonDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0F1C1C1770EA3900B1C38C /* MWBasicActionButtonDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		4CB08BA214B1F38700730E9F /* MWPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWPhotoProtocol.h; path = Classes/MWPhotoProtocol.h; sourceTree = SOURCE_ROOT; };
 		71E9DDC19F7C43C994A3A220 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D874FE2EB42A4D1F98628521 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		FC0F1C1B1770EA3900B1C38C /* MWBasicActionButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWBasicActionButtonDelegate.h; path = Classes/MWBasicActionButtonDelegate.h; sourceTree = SOURCE_ROOT; };
+		FC0F1C1C1770EA3900B1C38C /* MWBasicActionButtonDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWBasicActionButtonDelegate.m; path = Classes/MWBasicActionButtonDelegate.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				4C6F96D714AF70BD00F8389A /* MWCaptionView.m */,
 				4C6F96EF14AF70DC00F8389A /* MWPhotoBrowser.bundle */,
 				4C6F96EE14AF70BF00F8389A /* Other */,
+				FC0F1C1B1770EA3900B1C38C /* MWBasicActionButtonDelegate.h */,
+				FC0F1C1C1770EA3900B1C38C /* MWBasicActionButtonDelegate.m */,
 			);
 			path = MWPhotoBrowser;
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 				4C6F96EA14AF70BD00F8389A /* MWTapDetectingView.h in Headers */,
 				4C6F96EC14AF70BD00F8389A /* MWZoomingScrollView.h in Headers */,
 				4CB08BA314B1F38700730E9F /* MWPhotoProtocol.h in Headers */,
+				FC0F1C1D1770EA3900B1C38C /* MWBasicActionButtonDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +246,7 @@
 				4C6F96E914AF70BD00F8389A /* MWTapDetectingImageView.m in Sources */,
 				4C6F96EB14AF70BD00F8389A /* MWTapDetectingView.m in Sources */,
 				4C6F96ED14AF70BD00F8389A /* MWZoomingScrollView.m in Sources */,
+				FC0F1C1E1770EA3900B1C38C /* MWBasicActionButtonDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

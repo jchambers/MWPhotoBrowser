@@ -122,7 +122,7 @@
 	
 	// Create browser
 	MWPhotoBrowser *browser = [[MWPhotoBrowser alloc] initWithDelegate:self];
-    browser.displayActionButton = YES;
+    [browser setActionButtonDelegate:[[MWBasicActionButtonDelegate alloc] initWithPhotoBrowser:browser]];
     //browser.wantsFullScreenLayout = NO;
     //[browser setInitialPageIndex:2];
     

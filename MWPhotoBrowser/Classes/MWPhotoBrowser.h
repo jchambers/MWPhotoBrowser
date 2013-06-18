@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MessageUI/MessageUI.h>
 #import "MWPhoto.h"
 #import "MWPhotoProtocol.h"
 #import "MWCaptionView.h"
@@ -34,13 +33,15 @@
 @end
 
 // MWPhotoBrowser
-@interface MWPhotoBrowser : UIViewController <UIScrollViewDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate> 
+@interface MWPhotoBrowser : UIViewController <UIScrollViewDelegate> 
 
 // Properties
-@property (nonatomic) BOOL displayActionButton;
+@property (readonly) id<MWPhotoBrowserDelegate> delegate;
+@property id<MWPhotoBrowserActionButtonDelegate> actionButtonDelegate;
+@property (readonly) NSUInteger currentPageIndex;
 
 // Init
-- (id)initWithPhotos:(NSArray *)photosArray  __attribute__((deprecated)); // Depreciated
+- (id)initWithPhotos:(NSArray *)photosArray  __attribute__((deprecated)); // Deprecated
 - (id)initWithDelegate:(id <MWPhotoBrowserDelegate>)delegate;
 
 // Reloads the photo browser and refetches data
@@ -48,6 +49,13 @@
 
 // Set page that photo browser starts on
 - (void)setInitialPageIndex:(NSUInteger)index;
+
+// Control visibility
+- (void)setControlsHidden:(BOOL)hidden animated:(BOOL)animated permanent:(BOOL)permanent;
+- (void)hideControlsAfterDelay;
+- (void)showProgressHUDWithMessage:(NSString *)message;
+- (void)hideProgressHUD:(BOOL)animated;
+- (void)showProgressHUDCompleteMessage:(NSString *)message;
 
 @end
 
